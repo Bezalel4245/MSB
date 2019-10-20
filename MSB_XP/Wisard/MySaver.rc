@@ -1,0 +1,603 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MySaver.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONAL_SETTINGS DIALOGEX 0, 0, 296, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Optional Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,79,126,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,126,50,14
+    CONTROL         "",IDC_OS_LISTVIEW,"SysListView32",LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,282,77
+    LTEXT           "",IDC_OS_STATIC_MESSAGE,25,96,249,19
+    GROUPBOX        "Description",IDC_OS_STATIC,7,86,282,32
+END
+
+IDD_CONFIRM_PASSWORD DIALOGEX 0, 0, 214, 31
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm Password"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_CP_EDIT,8,8,79,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,98,8,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,157,8,50,14
+END
+
+IDD_ENTER_PASSWORD DIALOGEX 0, 0, 170, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password Validation"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EP_EDIT,7,22,156,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,53,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,45,50,14
+    LTEXT           "Enter password to edit MSS file:",IDC_STATIC,7,7,110,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPTIONAL_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_CONFIRM_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_ENTER_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MySaver.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MYSAVER_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MySaver"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_PP0 DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION " MyScreenSaver Builder Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PP0_EDIT,13,50,228,14,ES_AUTOHSCROLL,
+                    WS_EX_ACCEPTFILES
+    PUSHBUTTON      "Browse...",IDC_PP0_BUTTON1,253,50,50,14
+    LTEXT           "Images directory:",IDC_PP0_STATIC3,13,37,184,8
+    CONTROL         "Show tooltips from now on",IDC_PP0_CB_SHOWTOOLTIPS,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    17,127,101,10
+    COMBOBOX        IDC_PP0_COMBOBOX,66,14,63,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Build option:",IDC_PP0_STATIC,13,16,40,8
+    LTEXT           "Pictures category:",IDC_PP0_STATIC2,139,16,60,8
+    COMBOBOX        IDC_PP0_COMBOBOX2,208,14,94,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Edit options",IDC_PP0_STATIC_GROUPBOX,13,71,228,68
+    CONTROL         "Edit image set data (change pictures and update text data)",
+                    IDC_PP0_RADIO1,"Button",BS_AUTORADIOBUTTON,25,88,206,10
+    CONTROL         "Edit image set properties or/and create setup for MSS file",
+                    IDC_PP0_RADIO2,"Button",BS_AUTORADIOBUTTON,25,103,199,10
+    CONTROL         "All of the above",IDC_PP0_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,25,119,67,10
+END
+
+IDD_PP1 DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "MyScreenSaver Builder Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Add...",IDC_PP1_BUTTON_ADD,66,128,50,14
+    PUSHBUTTON      "Delete",IDC_PP1_BUTTON_DELETE,133,128,50,14
+    PUSHBUTTON      "Modify...",IDC_PP1_BUTTON_MODIFY,202,128,50,14
+END
+
+IDD_PP2 DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "MyScreenSaver Builder Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PP2_EDIT_TITLE,165,11,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP2_EDIT_NAME,165,31,98,14,ES_AUTOHSCROLL
+    LTEXT           " Name:",IDC_PP2_STATIC2,34,29,31,8
+    GROUPBOX        "Required Description",IDC_PP2_STATIC_GROUPBOX,7,0,305,
+                    51
+    LTEXT           "Title:",IDC_PP2_STATIC,36,14,30,8
+    LTEXT           "(e.g. MyScreenSaver.mss)",IDC_PP2_STATIC3,36,37,86,8
+    LTEXT           ".mss",IDC_PP2_STATIC4,265,34,16,8
+    GROUPBOX        "Self-Extracting Setup",IDC_PP2_STATIC_GROUPBOX2,8,54,
+                    304,51
+    LTEXT           "Setup name:",IDC_PP2_STATIC5,21,69,42,8
+    EDITTEXT        IDC_PP2_EDIT_SETUP_NAME,67,67,163,14,ES_AUTOHSCROLL
+    LTEXT           "Location:",IDC_PP2_STATIC7,21,87,30,8
+    EDITTEXT        IDC_PP2_EDIT_LOCATION,67,85,164,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change...",IDC_PP2_BUTTON_CHANGE,245,85,50,14
+    LTEXT           ".exe",IDC_PP2_STATIC6,245,69,16,8
+    CONTROL         "Create self-extracting setup",IDC_PP2_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,112,107,10
+    CONTROL         "",IDC_PP2_PROGRESSBAR,"msctls_progress32",WS_BORDER,8,
+                    128,303,14
+    PUSHBUTTON      "Optional Settings...",IDC_PP2_BUTTON_MORE_PARAMS,215,
+                    110,80,14
+END
+
+IDD_WELCOME DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "MyScreenSaver Builder Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "This wizard guides you through the steps to package images",
+                    IDC_WP_STATIC_HEADER,133,30,177,8
+    LTEXT           "images to MSS file and create the setup program for ",
+                    IDC_WP_STATIC_HEADER2,133,42,173,8
+    CONTROL         "Do not show welcome page when the wizard starts.",
+                    IDC_WP_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    134,169,179,10
+    CONTROL         "Activate (I already have an activation code)",
+                    IDC_WP_RADIO2,"Button",BS_AUTORADIOBUTTON,150,102,157,10
+    CONTROL         "Activate Later",IDC_WP_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,150,119,61,10
+    GROUPBOX        "Registration",IDC_WP_STATIC_GROUPBOX,133,69,178,100
+    CONTROL         "",IDC_WP_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_DISABLED | WS_BORDER,143,136,157,14
+    CONTROL         "Register and activate instantly!",IDC_WP_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,150,84,117,10
+    CTEXT           "XX days remaining out of 15",IDC_WP_STATIC2,146,154,151,
+                    8
+    LTEXT           "Welcome to the MSB Wizard",IDC_WP_STATIC_TITLE,153,13,
+                    142,12
+    LTEXT           "your screen saver. With v2.2 you also can:",
+                    IDC_WP_STATIC_HEADER3,133,53,140,8
+END
+
+IDD_REGISTER_PRODUCT DIALOGEX 0, 0, 271, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Register MyScreenSaver"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,214,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,214,24,50,14
+    LTEXT           "Name:",IDC_STATIC,21,11,22,8
+    EDITTEXT        IDC_RP_EDIT_NAME,81,7,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RP_ACTIVATION_CODE,82,28,118,14,ES_AUTOHSCROLL
+    LTEXT           "Activation code:",IDC_STATIC,19,31,53,8
+END
+
+IDD_ACTIVATE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "MyScreenSaver Builder Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Email:",IDC_AP_STATIC,13,41,20,8
+    LTEXT           "Activation code:",IDC_AP_STATIC2,13,63,53,8
+    EDITTEXT        IDC_AP_EMAIL,76,38,229,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AP_ACTIVATION_CODE,76,60,229,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Activation status:",IDC_AP_STATIC3,13,128,60,8
+    LTEXT           "Waiting for activation.",IDC_AP_STATIC4,77,128,233,8
+END
+
+IDD_PICTURE_HEADERS DIALOGEX 0, 0, 344, 380
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Picture Details"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TITLE,54,9,214,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change Picture...",IDC_PH_BUTTON_CHANGE_PICTURE,43,120,
+                    66,14
+    EDITTEXT        IDC_PH_EDIT_XML_YEAR,49,194,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_MAKE,124,194,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_MODEL,244,194,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_SUBMODEL,84,221,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_TYPE,191,221,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_PRICE,278,221,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_POWER,140,252,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_FUEL,228,252,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_LENGTH,78,283,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_WIDTH,170,283,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_HEIGHT,270,283,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_CLEARANCE,121,304,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_WEIGHT,225,304,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_TANK_VOLUME,161,335,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PH_EDIT_XML_COUNTRY,271,335,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_PH_LIST,148,32,120,107,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_PH_BUTTON_MOVEUP,282,35,50,14
+    PUSHBUTTON      "Move Down",IDC_PH_BUTTON_MOVEDOWN,282,54,50,14
+    PUSHBUTTON      "Save",IDC_PH_BUTTON_SAVE,282,79,50,14
+    PUSHBUTTON      "Close",IDC_PH_BUTTON_CLOSE,282,97,50,14
+    PUSHBUTTON      "Save && Close",IDC_PH_BUTTON_SAVECLOSE,282,123,50,14
+    PUSHBUTTON      "More",IDC_PH_BUTTON_RESIZE,282,153,50,14
+    LTEXT           "Picture title:",IDC_STATIC_TITLE,7,11,40,8
+    LTEXT           "Main",IDC_PH_STATIC_GROUPLINE,12,176,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,38,181,293,1
+    LTEXT           "Engine",IDC_PH_STATIC_GROUPLINE2,12,239,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,45,244,286,1
+    LTEXT           "Sizes and Weight",IDC_PH_STATIC_GROUPLINE3,12,268,66,8
+    LTEXT           "Misc",IDC_PH_STATIC_GROUPLINE4,12,322,14,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,39,326,292,1
+    LTEXT           "Make:",IDC_PH_STATIC_MAKE,97,196,20,8
+    LTEXT           "Model:",IDC_PH_STATIC_MODEL,213,196,22,8
+    LTEXT           "Submodel:",IDC_PH_STATIC_SUBMODEL,43,223,34,8
+    LTEXT           "Year:",IDC_PH_STATIC_YEAR,24,196,18,8
+    LTEXT           "Type:",IDC_PH_STATIC_TYPE,161,223,20,8
+    LTEXT           "Price:",IDC_PH_STATIC_PRICE,248,223,19,8
+    LTEXT           "Country:",IDC_PH_STATIC_COUNTRY,232,337,30,8
+    LTEXT           "Length:",IDC_PH_STATIC_LENGTH,42,285,26,8
+    LTEXT           "Width:",IDC_PH_STATIC_WIDTH,141,285,22,8
+    LTEXT           "Height:",IDC_PH_STATIC_HEIGHT,236,285,24,8
+    LTEXT           "Weight:",IDC_PH_STATIC_WEIGHT,189,306,26,8
+    LTEXT           "Clearance:",IDC_PH_STATIC_CLEARANCE,77,306,36,8
+    LTEXT           "Power:",IDC_PH_STATIC_POWER,103,255,24,8
+    LTEXT           "Tank Volume:",IDC_PH_STATIC_TANK_VOLUME,107,337,44,8
+    LTEXT           "Fuel:",IDC_PH_STATIC_FUEL,196,255,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,85,274,246,1
+    PUSHBUTTON      "Populate from XML...",IDC_PH_BUTTON_FROMXML,254,358,78,
+                    14,NOT WS_VISIBLE
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MySaver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res\\MySaver.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,2,22,0
+ PRODUCTVERSION 2,2,0,0
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "MyScreenSaverBuilder.com"
+            VALUE "FileDescription", "MSS and Setup Builder."
+            VALUE "FileVersion", "2, 2, 22, 0"
+            VALUE "InternalName", "MSB_Wizard"
+            VALUE "LegalCopyright", "Copyright (c) 2005-2010 MyScreenSaverBuilder.com. All rights reserved."
+            VALUE "ProductName", "MyScreenSaver Builder"
+            VALUE "ProductVersion", "2.2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WIZARD_HEADER       BITMAP                  "res\\Header.bmp"
+IDB_WIZARD_WATERMARK    BITMAP                  "res\\Welcome.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR                  "res\\arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PP0 DLGINIT
+BEGIN
+    IDC_PP0_COMBOBOX, 0x403, 14, 0
+0x654e, 0x2077, 0x6428, 0x6665, 0x7561, 0x746c, 0x0029, 
+    IDC_PP0_COMBOBOX, 0x403, 5, 0
+0x6445, 0x7469, "\000" 
+    IDC_PP0_COMBOBOX2, 0x403, 24, 0
+0x6f4e, 0x2074, 0x7073, 0x6365, 0x6669, 0x6569, 0x2064, 0x6428, 0x6665, 
+0x7561, 0x746c, 0x0029, 
+    IDC_PP0_COMBOBOX2, 0x403, 5, 0
+0x6143, 0x7372, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MySaver..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PP1_HEADER_TITLE    "View and Update Contents "
+    IDS_PP1_HEADER_SUBTITLE "Verify and update the list of pictures. Double-click to add text description and car specifications when picture category is ""Cars"". Avoid using big images (> 100 K)."
+    IDS_PP2_HEADER_TITLE    "Build Screen Saver"
+    IDS_PP2_HEADER_SUBTITLE "The screen saver is based on MSS file, which is packaged from the images you provided before. Before making MSS file, provide a title and a name for the MSS."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_WP_PROGRESS         "The progress bar shows the number of days out of 15 days that were used up for evaluation of MSB. Please uninstall the product or buy MSB if your evaluation period is expired."
+    IDH_PP0_RADIO1          "Choose this option if you want only to modify text descriptions associated with images and/or add/remove/change or reorder images."
+    IDH_AP_ACTIVATION_CODE  "To activate MSB, enter your personal activation code you received when registering MSB with Kagi's payment processing module or while registering on the internet."
+    IDH_AP_EMAIL            "To activate MSB, enter your email address you used when registering MSB with Kagi's payment processing module or while registering on the internet."
+    IDH_WP_STATIC_GROUPBOX  "The registration group of controls enables you to instantly register your MSB copy with Kagi's KRM module, activate product with your personal activation code, or try the product during 15 days for free."
+    IDH_WP_STATIC2          "6"
+    IDH_AP_STATIC4          "Shows current activation status."
+    IDH_PH_LIST             "Lists file names of the images you want to associate with a screen saver in the New Mode or enlists the images in the MSS file you are editing in the Edit Mode. To update the data for another image, click on the relative file name of the image."
+    IDH_PH_BUTTON_MOVEUP    "Click to move image up in the list on the left."
+    IDH_PP0_COMBOBOX        "Specifies whether you want to create a new screen saver from JPG or GIF images (images are packed up into MSS file in the process), or edit the existing MSS file with an option to re-create screen saver."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_PP2_EDIT_NAME       "Enter MSS file name. For example, Images_Dodge_2009 (the wizard adds .mss extension by its own). The default name is composed of current date and time."
+    IDH_WP_RADIO            "Invokes Kagi's payment processing module (KRM) enabling you to get activation code for MSB instantly."
+    IDH_WP_RADIO2           "Choose this option if you already have your activation code to activate your MSB copy (email is also required)."
+    IDH_WP_RADIO3           "If you don't have activation code you still may evaluate the product during 15 days evaluation period for free."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_WP_CHECKBOX         "Disable checkbox if you'd prefer to drop welcome page in the sequence of wizard's pages."
+    IDH_PH_STATIC_GROUPLINE "Groups the main descriptive attributes of a car: year, make, model, submodel, type, and price."
+    IDH_PP0_BACK            "No help provided."
+    IDH_PH_STATIC_GROUPLINE3 
+                            "Groups the attributes of physical dimensions (length, width, height) and weight."
+    IDH_PH_STATIC_GROUPLINE4 
+                            "Groups the miscellaneous attributes: tank volume, and county."
+    IDH_PP0_NEXT            "Go to the next page."
+    IDH_PP0_CANCEL          "No help provided."
+    IDH_PP0_HELP            "Shows help pages."
+    IDH_PP0_FINISH          "Finalize and close the wizard."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_PH_PREVIEW_WINDOW   "Shows the image corresponding to the image selected in the list on the right. The image is fitted to the size of this preview window."
+    IDH_PH_STATIC_GROUPLINE2 
+                            "Groups the engine attributes: power, and fuel type."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_PP1_BUTTON_ADD      "Opens dialog to add JPG or GIF images."
+    IDH_PP1_BUTTON_DELETE   "Removes the selected image from the list. In the Edit Mode, the image is physically removed from the relative MSS file when you Finish with the wizard on the next page (or Close on this page when the first edit option is enabled in the previous page)."
+    IDH_PP2_EDIT_LOCATION   "Specifies the destination folder where resulting setup program for the screen saver with your MSS file will be placed. This is ""MyScreenSaver Setups"" in ""My Documents"" by default."
+    IDH_PP2_EDIT_SETUP_NAME "Enter file name (without extension) for the setup program of the screen saver with your MSS file. The default name is composed of current date and time (the wizard adds .exe extension on its own). "
+    IDH_PP2_BUTTON_CHANGE   "Opens folder selection dialog where you can change the location where setup programs will be stored. By default, ""MyScreenSaver Setups"" folder in ""My Documents"" is used (generally one won't change it)."
+    IDH_PP2_STATIC6         "The wizard adds .exe extension to the setup name on the left."
+    IDH_PP2_PROGRESSBAR     "No comments set."
+    IDH_PP2_BUTTON_MORE_PARAMS 
+                            "Opens the Optional Settings dialog where you can set the values for additional attributes, which are not set or empty by default: the password to edit MSS file, comments for the MSS file, and comments for the setup program."
+    IDH_OS_LISTVIEW         "Enlists optional properties of MSS file and screen saver setup program, which you can edit for MSS file anytime and set for setup program when making it. Click on property to see help details."
+    IDH_OS_STATIC_MESSAGE   "Shows help details for the specific property when you click on it."
+    IDH_PP0_COMBOBOX2       "Specifies picture category for images. If your images are uncategorized choose ""Not Specified (default)"" and choose ""Cars"" if you want to work with car images."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_PP0_EDIT            "Specifies the folder where images reside for ""New"" screen saver (JPG or GIF images can be used) or full file name (path plus file name) of MSS file in the ""Edit"" mode."
+    IDH_PH_BUTTON_CLOSE     "Click to Close the dialog. If you've made any changes you should save the changes with Save button in advance (you'll be prompted to save if the form has unsaved data and you forgot to use Save button)."
+    IDH_PH_BUTTON_SAVECLOSE "Click to save changes and close the form in one step. The Save & Close button is enabled when you've made any changes."
+    IDH_PP0_STATIC_GROUPBOX "Edit options enable you to tell the wizard what specifically you want to do with the MSS file to avoid unnecessary steps. If not sure choose ""All of the above"" (default)."
+    IDH_PP0_RADIO2          "Choose this option if you want only to update MSS title, set comments for MSS file (visible in the file properties), password to edit MSS file or/and create screen saver setup program with this MSS file."
+    IDH_PP0_RADIO3          "Choose this option if you want to modify the majority of setting for MSS file or if you are uncertain about the options (default)."
+    IDH_PP2_STATIC_GROUPBOX "The required description group consists of the MSS title and name. The former is used by MyScreenSaver Configuration Utility and the latter is MSS file name (without .mss extension)."
+    IDH_PP2_STATIC_GROUPBOX2 
+                            "The group enables you to build setup program for the screen saver with your MSS file. In the Edit Mode you can make new setup with an older MSS file. Don't forget to enable check box below."
+    IDH_PP2_STATIC4         "The .mss is the default extension added to the name on the left by the wizard."
+    IDH_PH_BUTTON_CHANGE_PICTURE 
+                            "Click to change the picture with Select Picture dialog (you can pick up JPG or GIF images)."
+    IDH_PH_BUTTON_MOVEDOWN  "Click to move image down in the list on the left."
+    IDH_PH_EDIT_XML_MODEL   "Enter car model."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_EDIT_TITLE          "Enter the image set title (MSS title), a description of MSS file, which shows up in different places of Configure MyScreenSaver utility (system tray) to identify the MSS file."
+    IDH_PP0_BUTTON1         "Select folder where images located in the ""New"" mode or select MSS file to modify in the ""Edit"" mode."
+    IDH_PP1_LISTVIEW        "Shows the list of images (JPG or GIF) for the screen saver. Generally, images should be as small as possible (<50-100K) to save RAM. Double-click to open the Picture Details dialog.  "
+    IDH_PP1_BUTTON_MODIFY   "Opens the Picture Details dialog."
+    IDH_PP2_EDIT_TITLE      "Enter textual identification (title) for MSS file. For example, ""Dodge 2009"" (without quotes). The title shows up in different areas of MyScreenSaver Configuration Utility located in the system tray. The default title is composed of current date/time."
+    IDH_PP2_CHECKBOX        "Enables (or disables) options in this dialog to build a setup program for your screen saver."
+END
+
+STRINGTABLE 
+BEGIN
+    IDH_PH_BUTTON_RESIZE    "Expands/contracts the form for car MSS. The button is available only if ""Cars"" pictures category was selected before in the New Mode. In the Edit Mode, the wizard determines pictures category based on its selection in the New Mode."
+    IDH_PH_EDIT_XML_MAKE    "Enter car make. For example: Dodge."
+    IDH_PH_EDIT_XML_SUBMODEL 
+                            "Enter car submodel. For example: SE (for Dodge Caliber SE)."
+    IDH_PH_EDIT_XML_YEAR    "Enter the year of the model."
+    IDH_PH_EDIT_XML_TYPE    "Enter car type. Examples: Sedan, Coupe, Convertible, Hatchback, SUV etc."
+    IDH_PH_EDIT_XML_PRICE   "Enter car price. MSRP (Manufacturer Suggested Retail Price) is suggested."
+    IDH_PH_EDIT_XML_COUNTRY "Enter the original location where the car is designed and assembled."
+    IDH_PH_EDIT_XML_LENGTH  "Enter car length in inches."
+    IDH_PH_EDIT_XML_WIDTH   "Enter car width in inches."
+    IDH_PH_EDIT_XML_HEIGHT  "Enter car height in inches."
+    IDH_PH_EDIT_XML_WEIGHT  "Enter car weight in pounds."
+    IDH_PH_EDIT_XML_CLEARANCE "Enter the car clearance in inches."
+    IDH_PH_EDIT_XML_POWER   "Enter engine horsepower. "
+    IDH_PH_EDIT_XML_TANK_VOLUME "Enter car tank volume in gallons."
+    IDH_PH_EDIT_XML_FUEL    "Enter the type of fuel that engine uses."
+    IDH_PH_BUTTON_SAVE      "Click to save changes in the form. The Save button is enabled when you've made any changes. Then, click Close to close the dialog. Notice that you can perform these 2 steps with single Save & Close button."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\MySaver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
