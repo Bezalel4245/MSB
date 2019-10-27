@@ -1,0 +1,215 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: MySSWizard, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP00000E.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /GS /Zc:wchar_t /Yu"stdafx.h" /Fp"Release/MSB_Wizard.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+".\SubEdit.cpp"
+".\RegisterProduct.cpp"
+".\PictureDetails.cpp"
+".\OptionalSettings.cpp"
+".\MySaverPropSheet.cpp"
+".\MySaverPropPageWelcome.cpp"
+".\MySaverPropPageActivate.cpp"
+".\MySaverPropPage2.cpp"
+".\MySaverPropPage1.cpp"
+".\MySaverPropPage0.cpp"
+".\MySaver.cpp"
+".\EnterPassword.cpp"
+".\DirDialog.cpp"
+".\ConfirmPassword.cpp"
+]
+Creating command line "cl.exe @"c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP00000E.rsp" /nologo"
+Creating temporary file "c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP00000F.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /GS /Zc:wchar_t /Yc"stdafx.h" /Fp"Release/MSB_Wizard.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+".\stdafx.cpp"
+]
+Creating command line "cl.exe @"c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP00000F.rsp" /nologo"
+Creating temporary file "c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP000010.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /GS /Zc:wchar_t /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TC
+".\GenericDecode.c"
+".\BigInt.c"
+]
+Creating command line "cl.exe @"c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP000010.rsp" /nologo"
+Creating command line "rc.exe /d "NDEBUG" /d "_AFXDLL" /l 0x409 /I "Release" /fo"Release/MySaver.res" ".\MySaver.rc""
+Creating temporary file "c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP000011.rsp" with contents
+[
+/OUT:"Release/MSB_Wizard.exe" /INCREMENTAL:NO /NOLOGO /DEBUG /PDB:"Release/MySSWizard.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /MACHINE:X86 MSB_Devices.lib version.lib Htmlhelp.lib ".\MSB_Devices.lib" ".\htmlhelp.lib"
+".\Release\BigInt.obj"
+".\Release\ConfirmPassword.obj"
+".\Release\DirDialog.obj"
+".\Release\EnterPassword.obj"
+".\Release\GenericDecode.obj"
+".\Release\MySaver.obj"
+".\Release\MySaverPropPage0.obj"
+".\Release\MySaverPropPage1.obj"
+".\Release\MySaverPropPage2.obj"
+".\Release\MySaverPropPageActivate.obj"
+".\Release\MySaverPropPageWelcome.obj"
+".\Release\MySaverPropSheet.obj"
+".\Release\OptionalSettings.obj"
+".\Release\PictureDetails.obj"
+".\Release\RegisterProduct.obj"
+".\Release\stdafx.obj"
+".\Release\SubEdit.obj"
+".\Release\MySaver.res"
+]
+Creating command line "link.exe @"c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\RSP000011.rsp""
+Creating temporary file "c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\BAT000012.bat" with contents
+[
+@echo off
+copyWizard.bat
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing Post-Build Event..."
+exit 1
+:VCEnd
+]
+Creating command line ""c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\BAT000012.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+Compiling...
+SubEdit.cpp
+RegisterProduct.cpp
+PictureDetails.cpp
+PictureDetails.cpp(174) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(563) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(576) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(686) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(698) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(809) : warning C4018: '<' : signed/unsigned mismatch
+PictureDetails.cpp(929) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        PictureDetails.cpp(842) : definition of 'i' used
+        PictureDetails.cpp(913) : definition of 'i' ignored
+PictureDetails.cpp(929) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        PictureDetails.cpp(842) : definition of 'i' used
+        PictureDetails.cpp(913) : definition of 'i' ignored
+PictureDetails.cpp(929) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        PictureDetails.cpp(842) : definition of 'i' used
+        PictureDetails.cpp(913) : definition of 'i' ignored
+PictureDetails.cpp(931) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        PictureDetails.cpp(842) : definition of 'i' used
+        PictureDetails.cpp(913) : definition of 'i' ignored
+PictureDetails.cpp(937) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        PictureDetails.cpp(842) : definition of 'i' used
+        PictureDetails.cpp(913) : definition of 'i' ignored
+PictureDetails.cpp(836) : warning C4101: 'szName' : unreferenced local variable
+PictureDetails.cpp(1342) : warning C4101: 'iItemCount' : unreferenced local variable
+PictureDetails.cpp(1747) : warning C4101: 'szInitialDir' : unreferenced local variable
+PictureDetails.cpp(1936) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+PictureDetails.cpp(1938) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+OptionalSettings.cpp
+OptionalSettings.cpp(405) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+OptionalSettings.cpp(407) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropSheet.cpp
+MySaverPropPageWelcome.cpp
+MySaverPropPageWelcome.cpp(577) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPageActivate.cpp
+MySaverPropPageActivate.cpp(191) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPageActivate.cpp(193) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage2.cpp
+MySaverPropPage2.cpp(321) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(398) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(421) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(468) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(585) : warning C4129: 'C' : unrecognized character escape sequence
+MySaverPropPage2.cpp(850) : warning C4129: 'C' : unrecognized character escape sequence
+MySaverPropPage2.cpp(1026) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(1051) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(1101) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(1207) : warning C4129: 'C' : unrecognized character escape sequence
+MySaverPropPage2.cpp(1639) : warning C4101: 'dwStep1_1_Start' : unreferenced local variable
+MySaverPropPage2.cpp(1640) : warning C4101: 'dwStep1_2_Start' : unreferenced local variable
+MySaverPropPage2.cpp(1638) : warning C4101: 'dwFinish' : unreferenced local variable
+MySaverPropPage2.cpp(1763) : warning C4101: 'dwStep2_1_Start' : unreferenced local variable
+MySaverPropPage2.cpp(1764) : warning C4101: 'dwStep2_2_Start' : unreferenced local variable
+MySaverPropPage2.cpp(1762) : warning C4101: 'dwFinish' : unreferenced local variable
+MySaverPropPage2.cpp(2067) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(2088) : warning C4101: 'dwStep2_1_Start' : unreferenced local variable
+MySaverPropPage2.cpp(2086) : warning C4101: 'dwStep1_1_Start' : unreferenced local variable
+MySaverPropPage2.cpp(2089) : warning C4101: 'dwStep2_2_Start' : unreferenced local variable
+MySaverPropPage2.cpp(2087) : warning C4101: 'dwStep1_2_Start' : unreferenced local variable
+MySaverPropPage2.cpp(2085) : warning C4101: 'dwFinish' : unreferenced local variable
+MySaverPropPage2.cpp(2303) : warning C4101: 'nCharsWritten' : unreferenced local variable
+MySaverPropPage2.cpp(2305) : warning C4101: 'szLine' : unreferenced local variable
+MySaverPropPage2.cpp(2359) : warning C4101: 'nCharsWritten' : unreferenced local variable
+MySaverPropPage2.cpp(2361) : warning C4101: 'szLine' : unreferenced local variable
+MySaverPropPage2.cpp(2415) : warning C4101: 'nCharsWritten' : unreferenced local variable
+MySaverPropPage2.cpp(2417) : warning C4101: 'szLine' : unreferenced local variable
+MySaverPropPage2.cpp(2473) : warning C4101: 'nCharsWritten' : unreferenced local variable
+MySaverPropPage2.cpp(3018) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage2.cpp(3219) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage2.cpp(3221) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage1.cpp
+MySaverPropPage1.cpp(586) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(611) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(782) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(787) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+MySaverPropPage1.cpp(791) : warning C4244: 'argument' : conversion from 'SIZE_T' to 'int', possible loss of data
+MySaverPropPage1.cpp(939) : warning C4101: 'iItemCount' : unreferenced local variable
+MySaverPropPage1.cpp(1207) : warning C4101: 'szName' : unreferenced local variable
+MySaverPropPage1.cpp(1422) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(1432) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(1445) : warning C4101: 'iMSSImageID' : unreferenced local variable
+MySaverPropPage1.cpp(1447) : warning C4101: 'nID' : unreferenced local variable
+MySaverPropPage1.cpp(1840) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(1865) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(1915) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(2021) : warning C4129: 'C' : unrecognized character escape sequence
+MySaverPropPage1.cpp(2082) : warning C4018: '<' : signed/unsigned mismatch
+MySaverPropPage1.cpp(2078) : warning C4101: 'iPageCount' : unreferenced local variable
+MySaverPropPage1.cpp(2181) : warning C4101: 'iPageCount' : unreferenced local variable
+MySaverPropPage1.cpp(2383) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage1.cpp(2385) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage0.cpp
+MySaverPropPage0.cpp(727) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaverPropPage0.cpp(729) : warning C4311: 'type cast' : pointer truncation from 'HH_POPUP *__w64 ' to 'DWORD'
+MySaver.cpp
+EnterPassword.cpp
+DirDialog.cpp
+ConfirmPassword.cpp
+Generating Code...
+c:\myfiles\development\vcc\myscreensaver builder.net\mysaverproppage1.cpp(1673) : warning C4715: 'CMySaverPropPage1::EditMode_GetPicturesCategory' : not all control paths return a value
+c:\myfiles\development\vcc\myscreensaver builder.net\mysaverproppage1.cpp(1427) : warning C4715: 'CMySaverPropPage1::GetVectorIndex' : not all control paths return a value
+Compiling...
+GenericDecode.c
+GenericDecode.c(72) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(76) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(146) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(317) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(318) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(587) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(672) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(710) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(847) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(919) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(953) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+GenericDecode.c(958) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+BigInt.c
+Generating Code...
+Compiling resources...
+Linking...
+Performing Post-Build Event...
+        1 file(s) copied.
+        1 file(s) copied.
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\MyFiles\Development\Vcc\MyScreenSaver Builder.NET\Release\BuildLog.htm"
+MySSWizard - 0 error(s), 89 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
