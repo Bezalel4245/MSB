@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Devices - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Release/Devices.res" /d "NDEBUG" "C:\MyFiles\Development\VCC\MyScreenSaver Builder.NET\Devices\Devices.rc"" 
+Creating temporary file "C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVICES_EXPORTS" /Fp"Release/Devices.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MyFiles\Development\VCC\MyScreenSaver Builder.NET\Devices\Devices.cpp"
+"C:\MyFiles\Development\VCC\MyScreenSaver Builder.NET\Devices\stdafx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14A.tmp"" 
+Creating temporary file "C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/MSB_Devices.pdb" /machine:I386 /out:"Release/MSB_Devices.dll" /implib:"Release/MSB_Devices.lib" 
+".\Release\Devices.obj"
+".\Release\stdafx.obj"
+".\Release\Devices.res"
+".\kernel32.lib"
+".\User32.Lib"
+".\LIBC.LIB"
+".\OLDNAMES.LIB"
+".\gdi32.lib"
+".\shell32.lib"
+".\advapi32.lib"
+]
+Creating command line "link.exe @"C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14B.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Devices.cpp
+stdafx.cpp
+Linking...
+   Creating library Release/MSB_Devices.lib and object Release/MSB_Devices.exp
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14F.bat" with contents
+[
+@echo off
+copyMSB_Devices.bat
+]
+Creating command line ""C:\DOCUME~1\I'm\LOCALS~1\Temp\RSP14F.bat""
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+MSB_Devices.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
