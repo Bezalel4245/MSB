@@ -1,0 +1,21 @@
+#define IDR_CUSTOM1                     101
+#define IDR_CUSTOM2                     102
+#define IDR_CUSTOM3                     103
+#define IDR_CUSTOM4                     104
+#define IDR_CUSTOM5                     105
+#define IDR_CUSTOM6                     106
+#define IDR_CUSTOM7                     107
+#define IDR_CUSTOM8                     108
+#define IDR_CUSTOM9                     109
+#define IDR_CUSTOM10                    110
+#define IDR_CUSTOM11                    111
+#define IDR_CUSTOM12                    112
+#define IDR_CUSTOM13                    113
+#define IDR_CUSTOM14                    114
+#define IDR_CUSTOM15                    115
+#define IDR_CUSTOM16                    116
+#define IDR_CUSTOM17                    117
+#define IDR_CUSTOM18                    118
+#define IDR_CUSTOM19                    119
+#define IDR_CUSTOM20                    120
+
